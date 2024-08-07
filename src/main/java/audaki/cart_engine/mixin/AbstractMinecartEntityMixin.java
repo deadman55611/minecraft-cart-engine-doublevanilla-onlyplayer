@@ -86,7 +86,7 @@ public abstract class AbstractMinecartEntityMixin extends Entity {
         }
 
         // We only change logic when the minecart is currently being ridden by a living entity (player/villager/mob)
-        boolean hasLivingRider = this.getFirstPassenger() instanceof LivingEntity;
+        boolean hasLivingRider = this.getFirstPassenger() instanceof Player;
         if (!hasLivingRider) {
             return;
         }
